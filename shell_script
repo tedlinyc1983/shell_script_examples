@@ -1,3 +1,7 @@
 for i in `seq 0 255`; do echo "$i"; done
 
 for i in `seq 0 255`; do . 143.sh 192.168.1.$i; done
+
+for i in `seq 0 255`; do echo "$i" >> tmp_save_seq_log; done
+
+for i in `seq 0 255`; do . 143.sh 192.168.1.$i >> tmp_ping_result_log; done
